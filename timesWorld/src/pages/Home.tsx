@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import Navbar from '../components/Navbar';
 import CarouselComponent from '../components/Carousel/Carousel';
