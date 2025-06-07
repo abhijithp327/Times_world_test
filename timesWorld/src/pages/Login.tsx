@@ -4,6 +4,8 @@ import '../App.css';
 import { FaFacebookF, FaTwitter, FaLinkedin, FaGoogle } from 'react-icons/fa';
 import loginImage from '../assets/images/login.png';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { login } from '../redux/slice/authSlice';
 
 const socialIcons = [
     { id: 1, icon: <FaGoogle />, name: 'Google' },
@@ -13,6 +15,9 @@ const socialIcons = [
 ];
 
 const Login = () => {
+
+
+    const dispatch = useDispatch();
     const navigate = useNavigate();
 
     const [checked, setChecked] = React.useState<boolean>(false);
@@ -39,7 +44,9 @@ const Login = () => {
         }
 
         setError('');
-        navigate('/');
+        dispatch(login()); // Update Redux
+        navigate('/home');
+
     };
 
     return (
