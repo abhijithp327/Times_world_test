@@ -1,0 +1,47 @@
+.border-black {
+  border-color: #000000 !important;
+}
+.border-grey {
+  border-color: #CFCFCF !important;
+}
+
+.w-280 {
+  width: 280px !important;
+}
+
+.h-48 {
+  height: 48px !important;
+}
+
+.big-checkbox {
+  width: 24px;
+  height: 24px;
+  border: 3px solid black;
+  border-color: #000000 !important;
+}
+
+.link-underline-gap {
+  text-decoration: none;
+  position: relative;
+}
+
+.link-underline-gap:hover,
+.link-underline-gap:focus {
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 4px; 
+}
+
+.custom-carousel {
+    width: 100%;
+}
+
+.custom-carousel .carousel-inner {
+    width: 100%;
+}
+
+.custom-carousel .carousel-item {
+    width: 100%;
+}
+
+
